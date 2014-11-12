@@ -2,10 +2,10 @@
 This is a .NET library developed at [Fundación Juan March](http://www.march.es) (Madrid,Spain) to interact with Islandora´s core elements such as Fedora, Solr and RISearch.
 Initially only a few modules and classes are included in this library but we planned to release more. The modules and classes included in this release are:
 
-* **ModuleVariables** - here we need to define all variables such as paths, default namespaces, fedora username&password, etc
-* **ModuleRESTAPI** - module that wraps the [Fedora´s REST API] (https://wiki.duraspace.org/display/FEDORA34/REST+API) calls to .NET functions.
-* **ClassDigitalObject** - this class abstracts Fedora´s REST API methods into a class with objects allowing the creation of new objects or loading existing ones with all their properties. And making possible to check and change any information as well as adding or remove datastreams and relationships.
-* **ClassDatastream** - this class allows interacting with Fedora?s datastreams much like with the objects classs. It makes possible to create new datastreams or load existing ones with all their properties.  
+* [**ModuleVariables**](https://github.com/luismart/IslandoraFJM/blob/master/IslandoraFJM/IslandoraFJM/ModuleVariables.vb) - here we need to define all variables such as paths, default namespaces, fedora username&password, etc
+* [**ModuleRESTAPI**](https://github.com/luismart/IslandoraFJM/blob/master/IslandoraFJM/IslandoraFJM/ModuleRESTAPI.vb) - module that wraps the [Fedora´s REST API] (https://wiki.duraspace.org/display/FEDORA34/REST+API) calls to .NET functions.
+* [**ClassDigitalObject**](https://github.com/luismart/IslandoraFJM/blob/master/IslandoraFJM/IslandoraFJM/ClassDigitalObject.vb) - this class abstracts Fedora´s REST API methods into a class with objects allowing the creation of new objects or loading existing ones with all their properties. And making possible to check and change any information as well as adding or remove datastreams and relationships.
+* [**ClassDatastream**](https://github.com/luismart/IslandoraFJM/blob/master/IslandoraFJM/IslandoraFJM/ClassDatastream.vb) - this class allows interacting with Fedora?s datastreams much like with the objects classs. It makes possible to create new datastreams or load existing ones with all their properties.  
 
 In further releases we will include other modules and classes to interact with Solr and RISearch, to use powertools such as ImageMagick,PDF2JSON, SWFTools or features from the AdobePDF library and classes to create and edit MODS or EAC-CPF records.
 
