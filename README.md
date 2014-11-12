@@ -1,5 +1,4 @@
 # Islandora FJM Library
-======
 This is a .NET library developed at Fundación Juan March to interact with Islandora´s core elements such as Fedora, Solr and RISearch.
 Initially only a few modules and classes are included in this library but we planned to release more. The modules and classes included in this release are:
 
@@ -9,11 +8,8 @@ Initially only a few modules and classes are included in this library but we pla
 * **ClassDatastream** - this class allows interacting with Fedora?s datastreams much like with the objects classs. It makes possible to create new datastreams or load existing ones with all their properties.  
 
 In further releases we will include other modules and classes to interact with Solr and RISearch, to use powertools such as ImageMagick,PDF2JSON, SWFTools or features from the AdobePDF library and classes to create and edit MODS or EAC-CPF records.
-
 ======
-
 So far this library has been used for digital collections such as [All our art catalogues since 1973](http://www.march.es/arte/catalogos/?l=2), [Sim Sala Bim, library of illusionism](http://www.march.es/bibliotecas/ilusionismo/biblioteca-digital-de-ilusionismo.aspx?l=2) and [Fernandez-Shaw and the musical theatre](http://www.march.es/bibliotecas/repositorio-fernandez-shaw/?l=2).
-
 ======
 
 ## Some documentation
