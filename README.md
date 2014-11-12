@@ -29,7 +29,7 @@ obj.ModifyObjectLabel("testobject:1", "this is the new label", "log message to c
 or add an image as a new datastream
 
 ```vbnet 
-obj.add_datastream("IMG", "M", "IMAGE", "image/jpg", "AAAA", "http://digital.march.es:8080/fedora/objects/cat:1/datastreams/JPG_PORTADA/content", False)
+obj.add_datastream("IMG", "M", "IMAGE", "image/jpg", "adding an image datastream", "http://digital.march.es:8080/fedora/objects/cat:1/datastreams/JPG_PORTADA/content", False)
 ```
 
 and add some metadata as a new datastream
