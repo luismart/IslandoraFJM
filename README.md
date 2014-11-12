@@ -1,5 +1,5 @@
 # Islandora FJM Library
-This is a .NET library developed at Fundación Juan March to interact with Islandora´s core elements such as Fedora, Solr and RISearch.
+This is a .NET library developed at [Fundación Juan March](http://www.march.es) to interact with Islandora´s core elements such as Fedora, Solr and RISearch.
 Initially only a few modules and classes are included in this library but we planned to release more. The modules and classes included in this release are:
 
 * **ModuleVariables** - here we need to define all variables such as paths, default namespaces, fedora username&password, etc
