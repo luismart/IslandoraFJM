@@ -16,6 +16,8 @@ So far this library has been used for digital collections such as [All our art c
 
 ======
 
+## Some documentation
+
 Once configured the right variables in the file  *IslandoraFJM/ModuleVariables.vb*, we can go ahead and create a new digital object
 
 ```vbnet 
