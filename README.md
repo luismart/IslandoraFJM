@@ -63,7 +63,7 @@ obj.remove_relationship("testobject:1", "info:fedora/fedora-system:def/model#/ha
 obj.add_relationship("testobject:1" & "/IMG", "info:islandora/islandora-system:def/pageinfo#/width", "500px", True)
 ```
 
-'Or load an existing object
+'Or load an existing object to perform the previous actions
 ```vbnet 
 Dim obj2 As New DigitalObject("islandora:root")
 ```
