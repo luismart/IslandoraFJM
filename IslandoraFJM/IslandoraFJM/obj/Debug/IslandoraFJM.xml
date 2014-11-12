@@ -1,0 +1,119 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IslandoraFJM
+</name>
+</assembly>
+<members>
+<member name="M:IslandoraFJM.Datastream.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.String)">
+	<summary>
+ Instanciate a new datastream
+ </summary>
+	<param name="DSID">Datastream ID</param>
+	<param name="Label">Datastream Label</param>
+	<param name="ControlGroup">Control Group (M,X,I)</param>
+	<param name="MimeType">Mimetype</param>
+	<param name="URLLocation">Either a URL or the path of the file</param>
+	<param name="Internal">in case the datastream is inside the Islandora machine</param>
+	<param name="data">data to be ingested as a string, works well for xml</param>
+	<remarks></remarks>
+</member><member name="M:IslandoraFJM.Datastream.#ctor(System.String,System.String)">
+	<summary>
+ Instanciate an already existing datastream of an object
+ </summary>
+	<param name="DSID">Datastream ID</param>
+	<remarks></remarks>
+</member><member name="M:IslandoraFJM.DigitalObject.#ctor(System.String,System.String,System.Boolean)">
+	<summary>
+ Instanciate a new object forcing a PID or requesting the next PID in a Namespace
+ </summary>
+	<param name="PIDorNameSpace">PID. Compulsory</param>
+	<param name="Label">Label. Compulsory</param>
+	<param name="ForcePID">Label. Compulsory</param>
+	<remarks></remarks>
+</member><member name="M:IslandoraFJM.DigitalObject.#ctor(System.String)">
+	<summary>
+ Instanciate an already existing object
+ </summary>
+	<param name="PID">PID, with its NameSpace (ex: cat:123)</param>
+	<remarks></remarks>
+</member><member name="M:IslandoraFJM.DigitalObject.add_datastream(System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean)">
+	<summary>
+ Sub to add a new datastream
+ </summary>
+	<remarks>TO DO: fix boolean returned</remarks>
+</member><member name="M:IslandoraFJM.DigitalObject.remove_datastream(System.String)">
+	<summary>
+ Sub to remove datastream
+ </summary>
+	<param name="dsid"></param>
+	<returns>boolean</returns>
+	<remarks>TO DO: fix boolean returned</remarks>
+</member><member name="M:IslandoraFJM.DigitalObject.modify_datastream(System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Sub to modify datastream
+ </summary>
+	<param name="dsID">dsid</param>
+	<param name="dslabel">label</param>
+	<param name="mimeType">mime type</param>
+	<param name="LogMessage">log message</param>
+	<param name="dsLocation">location as url</param>
+	<remarks>TO DO: fix boolean returned</remarks>
+</member><member name="M:IslandoraFJM.DigitalObject.add_relationship(System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Function to add a relationship
+ </summary>
+	<param name="subjectPID">digital object that is subject</param>
+	<param name="predicate">predicate of the relationship</param>
+	<param name="objecto">the value of the relationship</param>
+	<param name="isLiteral">True if element value, False if attribute value</param>
+	<param name="datatype"></param>
+	<returns>Boolean</returns>
+	<remarks>TO DO: fix boolean returned</remarks>
+</member><member name="M:IslandoraFJM.DigitalObject.get_relationship(System.String,System.String)">
+	<summary>
+ Function to get a particular relationship in an object
+ </summary>
+	<param name="subject">digital object that is subject</param>
+	<param name="predicate">predicate of the relationship</param>
+	<returns>XMLDocument</returns>
+	<remarks></remarks>
+</member><member name="M:IslandoraFJM.DigitalObject.Load_DC">
+	<summary>
+ Loads the DC property of the object as an XMLDocument
+ </summary>
+	<remarks></remarks>
+</member><member name="M:IslandoraFJM.DigitalObject.getDatastreamObject(System.String)">
+	<summary>
+ Gets the datastream of an object
+ </summary>
+	<param name="dsid">dsid</param>
+	<returns>datastream object</returns>
+	<remarks></remarks>
+</member><member name="M:IslandoraFJM.DigitalObject.get_dataTable_Datastreams_Info">
+	<summary>
+ Create a datatable from datastream info
+ </summary>
+</member><member name="M:IslandoraFJM.DigitalObject.LoadObject(System.String)">
+	<summary>
+ This private sub fills in all of the object´s profile information and its list of datastreams
+ </summary>
+	<param name="PID">PID</param>
+	<remarks></remarks>
+</member><member name="P:IslandoraFJM.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:IslandoraFJM.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:IslandoraFJM.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,8 @@
+\\srvdisco\FUsuarios\Biblioteca\lmartinez\4. git-repos\IslandoraFJM Public\IslandoraFJM\IslandoraFJM\obj\Debug\IslandoraFJM.Resources.resources
+\\srvdisco\FUsuarios\Biblioteca\lmartinez\4. git-repos\IslandoraFJM Public\IslandoraFJM\IslandoraFJM\obj\Debug\IslandoraFJM.vbproj.GenerateResource.Cache
+\\srvdisco\FUsuarios\Biblioteca\lmartinez\4. git-repos\IslandoraFJM Public\IslandoraFJM\IslandoraFJM\bin\Debug\IslandoraFJM.dll
+\\srvdisco\FUsuarios\Biblioteca\lmartinez\4. git-repos\IslandoraFJM Public\IslandoraFJM\IslandoraFJM\bin\Debug\IslandoraFJM.pdb
+\\srvdisco\FUsuarios\Biblioteca\lmartinez\4. git-repos\IslandoraFJM Public\IslandoraFJM\IslandoraFJM\bin\Debug\IslandoraFJM.xml
+\\srvdisco\FUsuarios\Biblioteca\lmartinez\4. git-repos\IslandoraFJM Public\IslandoraFJM\IslandoraFJM\obj\Debug\IslandoraFJM.dll
+\\srvdisco\FUsuarios\Biblioteca\lmartinez\4. git-repos\IslandoraFJM Public\IslandoraFJM\IslandoraFJM\obj\Debug\IslandoraFJM.xml
+\\srvdisco\FUsuarios\Biblioteca\lmartinez\4. git-repos\IslandoraFJM Public\IslandoraFJM\IslandoraFJM\obj\Debug\IslandoraFJM.pdb
