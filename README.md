@@ -1,5 +1,5 @@
 # Islandora FJM Library
-This is a .NET library developed at [Fundación Juan March](http://www.march.es) to interact with Islandora´s core elements such as Fedora, Solr and RISearch.
+This is a .NET library developed at [Fundación Juan March](http://www.march.es) (Madrid,Spain) to interact with Islandora´s core elements such as Fedora, Solr and RISearch.
 Initially only a few modules and classes are included in this library but we planned to release more. The modules and classes included in this release are:
 
 * **ModuleVariables** - here we need to define all variables such as paths, default namespaces, fedora username&password, etc
@@ -14,7 +14,7 @@ So far this library has been used for digital collections such as [All our art c
 
 ## Some documentation
 
-Once configured the right variables in the file  *IslandoraFJM/ModuleVariables.vb*, we can go ahead and create a new digital object
+Once configured the right variables in the file  [*IslandoraFJM/ModuleVariables.vb*](https://github.com/luismart/IslandoraFJM/blob/master/IslandoraFJM/IslandoraFJM/ModuleVariables.vb), we can go ahead and create a new digital object
 
 ```vbnet 
 Dim obj As New DigitalObject("testobject:1", "this is a new object", True)
