@@ -8,6 +8,8 @@ Initially only a few modules and classes are included in this library but we pla
 * **ClassDigitalObject** - this class abstracts Fedora´s REST API methods into a class with objects allowing the creation of new objects or loading existing ones with all their properties. And making possible to check and change any information as well as adding or remove datastreams and relationships.
 * **ClassDatastream** - this class allows interacting with Fedora?s datastreams much like with the objects classs. It makes possible to create new datastreams or load existing ones with all their properties.  
 
+In further releases we will include other modules and classes to interact with Solr and RISearch, to use powertools such as ImageMagick,PDF2JSON, SWFTools or features from the AdobePDF library and classes to create and edit MODS or EAC-CPF records.
+
 ======
 
 Once configured the right variables in the file  *IslandoraFJM/ModuleVariables.vb*, we can go ahead and create a new digital object
