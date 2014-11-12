@@ -12,6 +12,10 @@ In further releases we will include other modules and classes to interact with S
 
 ======
 
+So far this library has been used for digital collections such as [All our art catalogues since 1973](http://www.march.es/arte/catalogos/?l=2), [Sim Sala Bim, library of illusionism](http://www.march.es/bibliotecas/ilusionismo/biblioteca-digital-de-ilusionismo.aspx?l=2) and [Fernandez-Shaw and the musical theatre](http://www.march.es/bibliotecas/repositorio-fernandez-shaw/?l=2).
+
+======
+
 Once configured the right variables in the file  *IslandoraFJM/ModuleVariables.vb*, we can go ahead and create a new digital object
 
 ```vbnet 
