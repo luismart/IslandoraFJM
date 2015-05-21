@@ -16,12 +16,21 @@ Public Module Variables
     Public Collection1_Drupal_URL As String = "http://mywebsite.com/collection1/fedora/repository/"
     
     'RISearch
-    Public RISearch_URL As String = "http://localhost:8080//fedora/risearch"
+    Public RISearch_URL As String = "http://localhost:8080/fedora/risearch"
+
+    'Gsearch
+    Public GSearch_URL As String = "http://localhost:8080//fedoragsearch/rest?operation=updateIndex&action=fromPid&value="
 
     Public fedorausername As String = "myfedorausername"
     Public fedorapassword As String = "myfedorapassword"
 
     'LogFile 
     Public LogFile As String = "\IngestLog.txt"
+
+    ' Applications 
+    Public ImageMagick_Path As String = """C:\Program Files (x86)\ImageMagick-6.8.7-Q16\convert"""
+    Public PDF2JSON_Path As String = """C:\Program Files (x86)\PDF2JSON\pdf2json.exe"""
+    Public SWFTools_Path As String = """C:\Program Files (x86)\SWFTools\pdf2swf.exe"""
+    Public CURLPath As String = """C:\Program Files (x86)\Curl\curl.exe"""
     
 End Module

@@ -63,6 +63,8 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ModulePowerTools.vb" />
+    <Compile Include="ModuleSolr.vb" />
     <Compile Include="ClassDatastream.vb" />
     <Compile Include="ClassDigitalObject.vb" />
     <Compile Include="ModuleRESTAPI.vb" />
@@ -101,6 +103,17 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Acrobat">
+      <Guid>{E64169B3-3592-47D2-816E-602C5C13F328}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

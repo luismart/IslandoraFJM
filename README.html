@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title>Islandora FJM .NET Library</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+
+
+
+
+</head>
+
+<body>
+<h1>Islandora FJM .NET Library</h1>
+
+<p>This is a .NET library developed at <a href="http://www.march.es">Fundación Juan March</a> (Madrid,Spain) to interact with Islandora´s core elements such as Fedora, Solr and RISearch. At this stage only a few modules and classes are included in this library but we plan to release more. The modules and classes included in this release are:</p>
+
+<ul>
+<li><a href="https://github.com/luismart/IslandoraFJM/blob/master/IslandoraFJM/IslandoraFJM/ModuleVariables.vb"><strong>ModuleVariables</strong></a> - here we need to define all variables such as paths, default namespaces, fedora username&amp;password, etc as well as paths to the applications for image and pdf manipulation such as ImageMagick</li>
+<li><a href="https://github.com/luismart/IslandoraFJM/blob/master/IslandoraFJM/IslandoraFJM/ModuleRESTAPI.vb"><strong>ModuleRESTAPI</strong></a> - module that wraps the <a href="https://wiki.duraspace.org/display/FEDORA34/REST+API">Fedora´s REST API</a> calls to .NET functions.</li>
+<li><a href="https://github.com/luismart/IslandoraFJM/blob/master/IslandoraFJM/IslandoraFJM/ClassDigitalObject.vb"><strong>ClassDigitalObject</strong></a> - this class abstracts Fedora´s REST API methods into a class with objects allowing the creation of new objects or loading existing ones with all their properties. And making possible to check and change any information as well as adding or remove datastreams and relationships.</li>
+<li><a href="https://github.com/luismart/IslandoraFJM/blob/master/IslandoraFJM/IslandoraFJM/ClassDatastream.vb"><strong>ClassDatastream</strong></a> - this class allows interacting with Fedora?s datastreams much like with the objects classs. It makes possible to create new datastreams or load existing ones with all their properties.<br/></li>
+<li><a href="https://github.com/luismart/IslandoraFJM/blob/master/IslandoraFJM/IslandoraFJM/ModuleSolr.vb"><strong>ModuleSolr</strong></a> - this module supports the use of Solr with functions to check if Solr is up, building Solr URL queries and datasets with the results as well as the facets</li>
+<li><a href="https://github.com/luismart/IslandoraFJM/blob/master/IslandoraFJM/IslandoraFJM/ModulePowerTools.vb"><strong>ModulePowerTools</strong></a> - this module incoorporates functions to work with images (get height and width, resize) and PDFs (paginate, get number of pages, convert to jpg or swf, etc). ImageMagick (<a href="http://www.imagemagick.org/script/index.php">http://www.imagemagick.org/script/index.php</a>), swftools(<a href="http://www.swftools.org/">http://www.swftools.org/</a>), pdf2json (<a href="https://code.google.com/p/pdf2json/">https://code.google.com/p/pdf2json/</a>) need to be installed and their paths added to ModuleVariables.vb </li>
+</ul>
+
+<p>In further releases we will include other modules and classes to interact with RISearch and classes to create and edit MODS or EAC-CPF records.</p>
+
+<p>So far this library has been used for digital collections such as <a href="http://www.march.es/arte/catalogos/?l=2">All our art catalogues since 1973</a>, <a href="http://www.march.es/bibliotecas/ilusionismo/biblioteca-digital-de-ilusionismo.aspx?l=2">Sim Sala Bim, library of illusionism</a> and <a href="http://www.march.es/bibliotecas/repositorio-fernandez-shaw/?l=2">Fernandez-Shaw and the musical theatre</a>.</p>
+
+<h2>Some documentation</h2>
+
+<h3>Working with Fedora objects and datastreams</h3>
+
+<p>Once configured the right variables in the file  <a href="https://github.com/luismart/IslandoraFJM/blob/master/IslandoraFJM/IslandoraFJM/ModuleVariables.vb"><em>IslandoraFJM/ModuleVariables.vb</em></a>, we can go ahead and create a new digital object</p>
+
+<pre><code class="vbnet">Dim obj As New DigitalObject(&quot;testobject:1&quot;, &quot;this is a new object&quot;, True)
+</code></pre>
+
+<p>and modify the label of the object with</p>
+
+<pre><code class="vbnet">obj.ModifyObjectLabel(&quot;testobject:1&quot;, &quot;this is the new label&quot;, &quot;log message to change label&quot;)
+</code></pre>
+
+<p>or add an image as a new datastream</p>
+
+<pre><code class="vbnet">obj.add_datastream(&quot;IMG&quot;, &quot;M&quot;, &quot;IMAGE&quot;, &quot;image/jpg&quot;, &quot;adding an image datastream&quot;, &quot;http://digital.march.es:8080/fedora/objects/cat:1/datastreams/JPG_PORTADA/content&quot;, False)
+</code></pre>
+
+<p>and add some metadata as a new datastream</p>
+
+<pre><code class="vbnet">obj.add_datastream(&quot;MODS&quot;, &quot;M&quot;, &quot;MODS&quot;, &quot;text/xml&quot;, &quot;Adding metadata&quot;, &quot;http://digital.march.es:8080/fedora/objects/cat:1/datastreams/MODS/content&quot;, False)
+</code></pre>
+
+<p>We can remove the metadata datastream</p>
+
+<pre><code class="vbnet">obj.remove_datastream(&quot;MODS&quot;)
+</code></pre>
+
+<p>Or add relationships to the RELS-EXT</p>
+
+<pre><code class="vbnet">obj.add_relationship(&quot;testobject:1&quot;, &quot;info:fedora/fedora-system:def/relations-external#/isMemberofCollection&quot;, &quot;info:fedora/collection1:CollectionModel&quot;, False)
+obj.add_relationship(&quot;testobject:1&quot;, &quot;info:fedora/fedora-system:def/model#/hasModel&quot;, &quot;info:fedora/collection1:ContentModel&quot;, True)
+</code></pre>
+
+<p>We can remove the relationship</p>
+
+<pre><code class="vbnet">obj.remove_relationship(&quot;testobject:1&quot;, &quot;info:fedora/fedora-system:def/model#/hasModel&quot;, &quot;info:fedora/collection1:ContentModel&quot;, True)
+</code></pre>
+
+<p>&#39; Or add a relationship to the RELS-IN</p>
+
+<pre><code class="vbnet">obj.add_relationship(&quot;testobject:1&quot; &amp; &quot;/IMG&quot;, &quot;info:islandora/islandora-system:def/pageinfo#/width&quot;, &quot;500px&quot;, True)
+</code></pre>
+
+<p>&#39;Or load an existing object to perform the previous actions</p>
+
+<pre><code class="vbnet">Dim obj2 As New DigitalObject(&quot;islandora:root&quot;)
+</code></pre>
+
+<h3>Working with Solr</h3>
+
+<p>This module allows to run queries against your Solr index and obtain the results in datasets
+Check if Solr is running </p>
+
+<pre><code class="vbnet">Dim IsSolrUp as Boolean = Solr_Status_OK
+</code></pre>
+
+<p>Build the URL for a simple Solr Query</p>
+
+<pre><code class="vbnet">Dim Solr_URL, Query as String 
+Solr_URL=&quot;http://localhost:8080/solr/collection1/select?&quot;
+Query=&quot;mods_title:Quijote&quot;
+
+Dim SolrURLQuery as String = Generate_Solr_Search_URL (Solr_URL, Query)
+</code></pre>
+
+<p>More complex queries are supported with filter queries, sorting and specified fields to return, pagination and facets</p>
+
+<pre><code class="vbnet">Dim Solr_URL, Query, FilterQuery,Sort,FieldsToReturn as String 
+Solr_URL=&quot;http://localhost:8080/solr/collection1/select?&quot;
+Query=&quot;mods_title:Quijote&quot;
+FilterQuery=&quot;mods_genre:book&quot;
+Sort=&quot;mods_dateCreated asc&quot;
+FieldsToReturn=&quot;mods_title,mods_dateCreated,mods_genre&quot;
+
+Dim SolrURLQuery as String = Generate_Solr_Search_URL (Solr_URL, Query, FilterQuery, Sort, FieldsToReturn)
+</code></pre>
+
+<p>Once we have constructed the Solr Query we can run the query and get the results in a datatable</p>
+
+<pre><code class="vbnet">Dim results as New DataSet
+Dim drupal_URL as String =&quot;http://myIslandorasite.com&quot; &#39; to build URLs to access the datastreams
+Dim Fields, Datastreams as Dictionary(Of String, String)
+
+Fields.Add(&quot;PID_admin&quot;, &quot;PID&quot;)
+Fields.Add(&quot;Title&quot;, &quot;mods_title&quot;)
+Fields.Add(&quot;Date&quot;, &quot;mods_dateCreated&quot;)
+
+Datastreams.Add(&quot;High Res Image&quot;,&quot;JPG&quot;)
+Datastreams.Add(&quot;Thumbnail&quot;,&quot;TN&quot;)
+
+results = ReturnDatasetFromSearch(Solr_Query_URL, Drupal_URL, Fields, Datastreams)
+</code></pre>
+
+<h3>Working with PowerTools</h3>
+
+<p>This module contains useful functions to work with images and pdfs.</p>
+
+<p>With images it is possible get their height and width or rescale them</p>
+
+<pre><code class="vbnet">Dim img_path, img_name as String
+img_path =&quot;C:/Images/&quot;
+img_name =&quot;Image1.jpg&quot;
+
+height = getImgHeight(img_path &amp; img_name)
+width = getImgWidth(img_path &amp; img_name)
+
+Dim scale as Integer
+scale=250
+
+rescaleJPG(img_name,img_path, scale)
+</code></pre>
+
+<p>With PDFs you can count the number of pages, OCR them or split them into pages</p>
+
+<pre><code class="vbnet">Dim myfile As String = &quot;myPDF.pdf&quot;
+Dim pathIn As String = &quot;C:\Temp\&quot;
+Dim pathOut As String = &quot;C:\Temp\&quot;
+
+&#39; convert pdf to images
+pdf2JPG(myfile, pathIn, pathOut)
+
+&#39;convert pdf to swf file
+pdf2swf(myfile, pathIn, pathOut)
+
+&#39;ocr a pdf to json or text files
+Dim firstpage As Integer = 1
+Dim lastpage As Integer = 10
+pdf2json(myfile, pathIn, pathOut, firstpage, lastpage)
+pdf2txt(myfile, pathIn, pathOut)
+
+&#39; calculate number of pages
+PDFnum_pages(pathIn &amp; myfile)
+
+&#39; split a pdf into one page pdfs
+SplitPDF(file, pathIn, pathOut)
+
+&#39; one function to do all the other processes at once
+Dim splitFiles, createJPGs, createTNs, createJSONs, createSWFs As Boolean
+splitFiles= True 
+createJPGs= True 
+createTNs= True
+createJSONs= True 
+createSWFs= True 
+
+PDF2BookFiles(myfile, pathIn, splitFiles, createJPGs, createTNs, createJSONs, createSWFs)
+
+</code></pre>
+
+</body>
+
+</html>
+
